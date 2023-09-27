@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-7</title>
+    <style>
+        span{
+            color: blue;
+            font-size: larger;
+            font-weight: 900;
+        }
+        .butt{
+            padding-left: 150px;
+        }
+        img{
+            position: relative;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: Infinite;
+            animation-play-state: paused;
+        }
+        @keyframes example {
+            0%   {left:0px;}
+            100% {left:75%;}
+        }
+    </style>
+</head>
+<body>
+    <img src="train1.png" alt="" id="img"><br><br>
+    <span>Click the following buttons to handle animation</span><br><br>
+    <div class="butt">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+    <script>
+        const trainImage = document.querySelector("img");
+        const startButton = document.getElementById("start");
+        const stopButton = document.getElementById("stop");
+
+        startButton.addEventListener("click", () => {
+            trainImage.style.animationPlayState = "running";
+        });
+
+        stopButton.addEventListener("click", () => {
+            trainImage.style.animationPlayState = "paused";
+        });
+    </script>
+</body>
+</html>

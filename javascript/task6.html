@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Task-6</title>
+    <script src="https://kit.fontawesome.com/6bb16f3aff.js" crossorigin="anonymous"></script>
+    <style>
+        h2{
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+        a{
+            text-decoration: none;
+        }
+        .text{
+            text-align: center;
+        }
+        button{
+            width: 100%;
+        }
+        .container{
+            text-align: center;
+            margin-top: 100px;
+            background-color: rgba(201, 201, 201, 0.352);
+            width: 350px;
+            padding: 50px 40px;
+            box-shadow: 0px 3px 2px rgb(182, 181, 181);
+        }
+        i{
+            padding: 8px;
+            margin: 0px;
+            background-color: rgba(221, 221, 221, 0.571);
+        }
+        .input-group{
+            margin: 0px;
+            padding: 0px;
+            border: 1px solid black;
+            height: 35px;
+        }
+        #value{
+            border: none;
+            width: 89%;
+        }
+        .remind{ 
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Instagram</h2><br>
+        <form action="/login">
+            <div class="input-group">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Username" id="value">
+            </div><br>
+            <div class="input-group">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" id="value">
+            </div><br>
+            <button class="btn btn-primary">Log in</button>
+        </form><br>
+        <div class="remind">
+            <div><input type="checkbox"> Remember me</div>
+            <a href="forgot.html">Forgot Password?</a>
+        </div>
+    </div><br>
+    <div class="text">
+        <span>Don't have an account! <a href="signup.html">Sign up here.</a></span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

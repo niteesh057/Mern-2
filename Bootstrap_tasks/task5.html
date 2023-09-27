@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6bb16f3aff.js" crossorigin="anonymous"></script>
+    <style>
+        .form-control {
+            display: initial !important;
+        }
+
+        #label {
+            font-weight: 650;
+            text-align: center;
+            font-size: medium;
+        }
+
+        .input-group {
+            border: 1px solid rgba(155, 153, 153, 0.4);
+            border-radius: 2px;
+            font-size: small;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .fa-solid {
+            padding: 8px 10px;
+        }
+
+        .form-control {
+            height: 30px;
+            border-radius: 0px;
+            font-size: medium;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container" style="background-color: rgba(196, 195, 195, 0.443);">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col">
+                <table class="table" style="margin: 30px;">
+                    <tr>
+                        <td id="label"><label for="" class="control-label" id="flabel">First Name</label></td>
+                        <td>
+                            <div class="input-group" id="fnameb">
+                                <i class="fa-solid fa-user" id="ficon"></i>
+                                <input id="fname" type="text" class="form-control" placeholder="First Name">
+                                <span id="ficonin"></span>
+                            </div>
+                            <span id="finvalid" style="color: red; font-size: small;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="label"><label for="" class="control-label" id="llabel">Last Name</label></td>
+                        <td>
+                            <div class="input-group" id="lnameb">
+                                <i class="fa-solid fa-user" id="licon"></i>
+                                <input id="lname" type="text" class="form-control" placeholder="Last Name">
+                                <span id="liconin"></span>
+                            </div>
+                            <span id="linvalid" style="color: red; font-size: small;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="label"><label for="" class="control-label" id="elabel">E-Mail</label></td>
+                        <td>
+                            <div class="input-group" id="enameb">
+                                <i class="fa-solid fa-envelope" style="color: #404040;" id="eicon"></i>
+                                <input id="email" type="email" class="form-control" placeholder="E-Mail Address">
+                                <span id="eiconin"></span>
+                            </div>
+                            <span id="einvalid" style="color: red; font-size: small;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="label"><label for="" class="control-label" id="mlabel">Phone#</label></td>
+                        <td>
+                            <div class="input-group" id="mnameb">
+                                <i class="fa-solid fa-phone" style="color: #3b3b3b;" id="micon"></i>
+                                <input id="mnumber" type="number" class="form-control" placeholder="(845)555-1212">
+                                <span id="miconin"></span>
+                            </div>
+                            <span id="minvalid" style="color: red; font-size: small;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="label"><label for="" class="control-label" id="alabel">Address</label></td>
+                        <td>
+                            <div class="input-group" id="anameb">
+                                <i class="fa-solid fa-house" style="color: #404040;" id="aicon"></i>
+                                <input id="address" type="text" class="form-control" placeholder="Address">
+                                <span id="aiconin"></span>
+                            </div>
+                            <span id="ainvalid" style="color: red; font-size: small;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="label"><label for="" class="control-label" id="clabel">City</label></td>
+                        <td>
+                            <div class="input-group" id="cnameb">
+                                <i class="fa-solid fa-house" style="color: #404040;" id="cicon"></i>
+                                <input id="city" type="text" class="form-control" placeholder="city">
+                                <span id="ciconin"></span>
+                            </div>
+                            <span id="cinvalid" style="color: red; font-size: small;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="label"><label for="" class="control-label">State</label></td>
+                        <td>
+                            <div class="input-group">
+                                <i class="fa-solid fa-list" style="color: #454545;"></i>
+                                <select name="" id="input" class="form-select">
+                                    <option value="" selected>Please select your state</option>
+                                    <option value="1">Andhra Pradesh</option>
+                                    <option value="2">Tamil Nadu</option>
+                                    <option value="3">Karnataka</option>
+                                    <option value="4">Other</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="label"><label for="" class="control-label">Do you have hosting?</label></td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    No
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="label"><label for="" class="control-label">Project Description</label></td>
+                        <td>
+                            <div class="input-group">
+                                <i class="fa-solid fa-pen" style="color: #424242;" id="pen"></i>
+                                <textarea class="form-control" placeholder="Project Description"
+                                    id="floatingTextarea"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="button" class="btn btn-warning text-white" onclick="valid()">Send<i class="fa fa-paper-plane"
+                                    style="padding: 5px;"></i></button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    </div>
+    <script>
+        function valid() {
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let email = document.getElementById("email").value;
+            let mnumber = document.getElementById("mnumber").value;
+            let address = document.getElementById("address").value;
+            let city = document.getElementById("city").value;
+
+            if (fname.trim() === "") {
+                document.getElementById("finvalid").innerHTML="Please supply your first name";
+                document.getElementById("ficonin").innerHTML=`<i class="fa-solid fa-x" style="color: #ff0000;"></i>`;
+                document.getElementById("flabel").innerHTML=`<label for="" class="control-label" id="flabel" style="color:red;">First Name</label>`;
+                let ficon = document.getElementById("ficon");
+                ficon.style.color="#ff0000"; ficon.style.backgroundColor="#f5d7d7";
+                let one = document.getElementById("fnameb");
+                one.style.borderColor="red";
+            }
+            if(lname.trim() === ""){
+                document.getElementById("linvalid").innerHTML="Please supply your last name";
+                document.getElementById("liconin").innerHTML=`<i class="fa-solid fa-x" style="color: #ff0000;"></i>`;
+                document.getElementById("llabel").innerHTML=`<label for="" class="control-label" id="llabel" style="color:red;">Last Name</label>`;
+                let licon = document.getElementById("licon");
+                licon.style.color="#ff0000"; licon.style.backgroundColor="#f5d7d7";
+                let one = document.getElementById("lnameb");
+                one.style.borderColor="red";
+            }
+            if (email.trim() === "") {
+                document.getElementById("einvalid").innerHTML="Please supply your email address";
+                document.getElementById("eiconin").innerHTML=`<i class="fa-solid fa-x" style="color: #ff0000;"></i>`;
+                document.getElementById("elabel").innerHTML=`<label for="" class="control-label" id="elabel" style="color:red;">E-Mail</label>`;
+                let eicon = document.getElementById("eicon");
+                eicon.style.color="#ff0000"; eicon.style.backgroundColor="#f5d7d7";
+                let one = document.getElementById("enameb");
+                one.style.borderColor="red";
+            }
+            if(mnumber.trim() === ""){
+                document.getElementById("minvalid").innerHTML="Please supply your phone number";
+                document.getElementById("miconin").innerHTML=`<i class="fa-solid fa-x" style="color: #ff0000;"></i>`;
+                document.getElementById("mlabel").innerHTML=`<label for="" class="control-label" id="mlabel" style="color:red;">Phone#</label>`;
+                let micon = document.getElementById("micon");
+                micon.style.color="#ff0000"; micon.style.backgroundColor="#f5d7d7";
+                let one = document.getElementById("mnameb");
+                one.style.borderColor="red";
+            }
+            if (address.trim() === "") {
+                document.getElementById("ainvalid").innerHTML="Please supply your street address";
+                document.getElementById("aiconin").innerHTML=`<i class="fa-solid fa-x" style="color: #ff0000;"></i>`;
+                document.getElementById("alabel").innerHTML=`<label for="" class="control-label" id="alabel" style="color:red;">Address</label>`;
+                let aicon = document.getElementById("aicon");
+                aicon.style.color="#ff0000"; aicon.style.backgroundColor="#f5d7d7";
+                let one = document.getElementById("anameb");
+                one.style.borderColor="red";
+            }
+            if(city.trim() === ""){
+                document.getElementById("cinvalid").innerHTML="Please supply your city";
+                document.getElementById("ciconin").innerHTML=`<i class="fa-solid fa-x" style="color: #ff0000;"></i>`;
+                document.getElementById("clabel").innerHTML=`<label for="" class="control-label" id="clabel" style="color:red;">City</label>`;
+                let cicon = document.getElementById("cicon");
+                cicon.style.color="#ff0000"; cicon.style.backgroundColor="#f5d7d7";
+                let one = document.getElementById("cnameb");
+                one.style.borderColor="red";
+            }
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
